@@ -1,10 +1,3 @@
-source('lib/logger.r')
-if (!require(aws.s3, quietly = TRUE)){
-  install.packages(
-    "aws.s3",
-    repos = c(getOption("repos"), "http://cloudyr.github.io/drat")
-  )
-}
 Loader <- R6Class("Loader",
   public = list(
     logger = NA,
