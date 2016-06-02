@@ -12,7 +12,12 @@ Install the required packages by running the install_packages script
 ````
 $ ./install_packages
 ````
-
+Export your AWS credentials into the shell
+````
+export AWS_DEFAULT_REGION=ap-southeast-2
+export AWS_SECRET_ACCESS_KEY=
+export AWS_ACCESS_KEY_ID=
+````
 Start an interactive R session
 ````
 $ r
