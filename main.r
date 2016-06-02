@@ -1,10 +1,6 @@
 require(R6, quietly = TRUE)
-if (!require(aws.s3, quietly = TRUE)){
-  install.packages(
-    "aws.s3",
-    repos = c(getOption("repos"), "http://cloudyr.github.io/drat")
-  )
-}
+require(aws.s3, quietly = TRUE)
+
 source('lib/logger.r')
 source('lib/loader.r')
 loader = Loader$new('origin-poc-bucket')

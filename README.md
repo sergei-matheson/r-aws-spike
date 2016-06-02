@@ -4,21 +4,27 @@ Spike of AWS S3 load with R
 
 Install R with Homebrew:
 ````
-brew tap homebrew/science
-brew install R
-
+$ brew tap homebrew/science
+$ brew install R
 ````
+
+Install the required packages by running the install_packages script 
+````
+$ ./install_packages
+````
+
 Start an interactive R session
 ````
-$> r
+$ r
 Type 'demo()' for some demos, 'help()' for on-line help, or
 'help.start()' for an HTML browser interface to help.
 Type 'q()' to quit R.
 >
 ````
+
 Source the entry point:
 ````
->source('main.r')
+> source('main.r')
   trial1 mass1 velocity1
 1      A  11.0        12
 2      A  12.0        14

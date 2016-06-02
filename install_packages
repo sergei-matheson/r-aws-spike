@@ -1,0 +1,16 @@
+#! /usr/bin/env Rscript
+
+required = c("aws.s3", "dplyr")
+
+missing = setdiff(required, installed.packages())
+if (length(missing) > 0) {
+install.packages(
+  missing,
+  repos = c(
+    "https://cloud.r-project.org",
+    "http://cloudyr.github.io/drat"
+  )
+)
+} else {
+  cat("You've already got everything installed\n")
+}
